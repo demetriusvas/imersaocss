@@ -1,6 +1,44 @@
+/* soft reset do CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body{
-    background: linear-gradient(to right, #2c3e50, #3498db);
+    background-image: url(../img/fundo.jpg);
+    background-size: auto 100vh;
     font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    font-size: 10px;
+}
+
+/* Se a tela tiver pelo menos 400px vai carregar estes estilos */
+@media (min-width: 400px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+/* breakpoint*/
+@media (min-width: 600px) {
+    body {
+        font-size: 18px;
+    }
+}
+
+header {
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu {
+    background-color: white;
+    position: fixed;
+    width: 100vw;
+    top: 0;
 }
 
 .menu ul{
@@ -9,11 +47,18 @@ body{
 }
 
 .menu a{
-    background-color: white;
+    display: block;
+    padding: 10px 20px;
+}
+
+a {
+    color: teal;
+    text-decoration: none;
 }
 
 .menu a:hover{
     text-decoration: underline;
+    background: aquamarine;
 }
 
 .menu li{
@@ -25,6 +70,15 @@ body{
     color: whitesmoke;
 }
 
+.site-title {
+    font-size: 3em;
+}
+
 .site-subtitle{
     font-style: italic;
+}
+
+.img-portfolio {
+    width: 180px;
+    height: 180px;
 }
